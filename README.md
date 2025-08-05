@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# 🔐 React OTP Input Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, modern, and intelligent **OTP (One-Time Password) input** component built using **React**. This project supports smart OTP input behavior — including pasting mixed characters, smooth navigation, and full keyboard support — making it ideal for login, verification, or authentication workflows.
 
-## Available Scripts
+<p align="center">
+  <img src="https://via.placeholder.com/600x200.png?text=React+OTP+Input+Preview" alt="OTP UI Screenshot" width="600"/>
+</p>
 
-In the project directory, you can run:
+---
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔢 **Custom Length**: Dynamic OTP length (default is 6)
+- 🧠 **Smart Paste Support**: Paste any text (e.g. `abc123xyz456`), it extracts only digits and fills the OTP fields perfectly
+- ⌨️ **Keyboard Navigation**: 
+  - Backspace to delete and move left
+  - Left/Right arrows to move across input fields
+- 🔐 **One Digit per Field**: Easy to style and validate
+- 🎨 **Clean UI**: Basic yet user-friendly and animated interface
+- ♻️ **Reusable Component**: Easily used across projects
+- 📱 **Responsive**: Works across devices
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tech Stack
 
-### `npm run build`
+- React (Functional Components)
+- JavaScript (ES6+)
+- CSS for styling
+- React Hooks: `useState`, `useRef`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Folder Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ReactProject/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── OTP.jsx // Main OTP logic
+│ │ └── style.css // Styling for OTP input
+│ ├── App.js
+│ └── index.js
+├── README.md
+├── package.json
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run this project locally:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/varungovindu/ReactProject.git
+cd ReactProject
+npm install
+npm start
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
