@@ -1,0 +1,70 @@
+/* Container for OTP boxes */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 60px;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* OTP input box styles */
+.otp-input {
+  width: 52px;
+  height: 52px;
+  font-size: 22px;
+  text-align: center;
+  border: 2px solid #d0d0d0;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  caret-color: #007bff;
+}
+
+/* Focus animation */
+.otp-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.2);
+  outline: none;
+  transform: scale(1.07);
+}
+
+/* Add hover effect */
+.otp-input:hover {
+  border-color: #888;
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+/* Optional animation */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply pop-in to each input */
+.otp-input {
+  animation: popIn 0.3s ease forwards;
+}
+/* OTP title */
+.otp-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  font-family: 'Poppins', sans-serif;
+}
